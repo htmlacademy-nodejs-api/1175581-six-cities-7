@@ -1,5 +1,3 @@
-import { Host } from './host.type.js';
-
 export type Offer = {
   id: string;
   title: string;
@@ -15,7 +13,7 @@ export type Offer = {
   maxAdults: number;
   price: number;
   goods: string[];
-  host: Host;
+  host: string;
   commentsCount: number;
   latitude: number;
   longitude: number;

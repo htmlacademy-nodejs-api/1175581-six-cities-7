@@ -1,0 +1,93 @@
+{
+  "api": {
+    "ids": [
+      "6af6f711-c28d-4121-82cd-e0b472a27f00",
+      "6af6f711-c28d-4121-82cd-e0b472a27f01"
+    ],
+    "titles": [
+      "Beautiful & luxurious studio at great location",
+      "Amazing and Extremely Central Flat"
+    ],
+    "cities": [
+      "Amsterdam",
+      "Paris",
+      "Cologne",
+      "Hamburg",
+      "Brussels",
+      "Dusseldorf"
+    ],
+    "previewImages": [
+      "book.jpg",
+      "institute-book.jpg",
+      "dark-tower.jpg",
+      "shining.jpg",
+      "draft.jpg",
+      "magic.jpg"
+    ],
+    "images": [
+      "https://url-to-image/image0.png",
+      "https://url-to-image/image1.png",
+      "https://url-to-image/image2.png",
+      "https://url-to-image/image3.png",
+      "https://url-to-image/image4.png",
+      "https://url-to-image/image5.png",
+      "https://url-to-image/image6.png",
+      "https://url-to-image/image7.png",
+      "https://url-to-image/image8.png",
+      "https://url-to-image/image9.png"
+    ],
+    "isPremium": [
+      "false",
+      "true"
+    ],
+    "isFavorite": [
+      "false",
+      "true"
+    ],
+    "ratings": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "types": [
+      "apartment",
+      "hotel"
+    ],
+    "bedrooms": [
+      "1",
+      "2",
+      "3"
+    ],
+    "maxAdults": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "goods": [
+      "Breakfast",
+      "Air",
+      "Conditioning"
+    ],
+    "hosts": [
+      "Oliver Conner",
+      "Karen Stepanyants"
+    ],
+    "commentsCounts": [
+      "10",
+      "15",
+      "20"
+    ],
+    "latitudes": [
+      "52.370216",
+      "48.85661"
+    ],
+    "longitudes": [
+      "4.895168",
+      "2.351499"
+    ]
+  }
+}
