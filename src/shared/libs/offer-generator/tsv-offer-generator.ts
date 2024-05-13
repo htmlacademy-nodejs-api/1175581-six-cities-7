@@ -4,12 +4,7 @@ import { OfferGenerator } from './offer-generator.interface.js';
 import { MockServerData } from '../../types/index.js';
 
 import { generateRandomValue, getRandomItem, getRandomItems } from '../../helpers/index.js';
-
-const MIN_PRICE = 100;
-const MAX_PRICE = 500;
-
-const FIRST_WEEK_DAY = 1;
-const LAST_WEEK_DAY = 7;
+import { Generate } from './consts-offer-generator.js';
 
 export class TSVOfferGenerator implements OfferGenerator {
   constructor(private readonly mockData: MockServerData) { }
@@ -24,7 +19,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const isFavorite = getRandomItem<string>(this.mockData.isFavorite);
     const rating = getRandomItem(this.mockData.ratings);
     const type = getRandomItem(this.mockData.types);
-    const price = generateRandomValue(MIN_PRICE, MAX_PRICE).toString();
+    const price = generateRandomValue(Generate.MIN_PRICE, Generate.MAX_PRICE).toString();
     const bedrooms = getRandomItem(this.mockData.bedrooms);
     const maxAdults = getRandomItem(this.mockData.maxAdults);
     const goods = getRandomItems(this.mockData.goods).join(';');
@@ -34,7 +29,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const longitude = getRandomItem(this.mockData.longitudes);
 
     const createdDate = dayjs()
-      .subtract(generateRandomValue(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day')
+      .subtract(generateRandomValue(Generate.FIRST_WEEK_DAY, Generate.LAST_WEEK_DAY), 'day')
       .toISOString();
 
     return [
